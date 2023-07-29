@@ -3,7 +3,7 @@ import { reactive, ref } from 'vue';
 import type { FormInstance, FormRules } from 'element-plus';
 import { useRouter } from 'vue-router';
 import { ElNotification } from 'element-plus';
-import { useAuthStore } from '@/stores/auth.ts';
+import { useAuthStore } from '@/stores/auth';
 
 const ruleFormRef = ref<FormInstance>();
 const authStore = useAuthStore();
