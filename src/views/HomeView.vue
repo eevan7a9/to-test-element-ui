@@ -8,7 +8,10 @@ const auth = useAuthStore();
   <main>
     <div v-if="!auth.userToken">
       <h1>Only logged-in users may access the contents.</h1>
-      please <el-link type="primary" href="/signin">Signin</el-link>
+      routerLink please
+      <el-link type="primary">
+        <router-link to="/signin">Signin</router-link>
+      </el-link>
     </div>
 
     <div v-else>
